@@ -1,0 +1,22 @@
+
+export JAVA_HOME=/Users/pengjiang/softwares/jdk17/Contents/Home
+export MAVEN_HOME=/Users/pengjiang/Accounts/2022/apache-maven-3.8.5/
+cd /Users/pengjiang/Accounts/cdtech/dian-web/dian-mtls
+$MAVEN_HOME/bin/mvn -f ./pom.xml clean  package  -DskipTests
+
+
+
+run server.jar
+
+export JAVA_HOME=/Users/pengjiang/softwares/jdk17/Contents/Home
+cd /Users/pengjiang/Accounts/cdtech/dian-web/dian-mtls/
+java  -jar server-service/target/server.jar
+
+
+run client.jar
+
+export JAVA_HOME=/Users/pengjiang/softwares/jdk17/Contents/Home
+cd /Users/pengjiang/Accounts/cdtech/dian-web/dian-mtls
+
+java  -jar client-service/target/client.jar
+
